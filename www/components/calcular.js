@@ -1,5 +1,5 @@
 // This is a JavaScript file
-
+//kk
 //Declarando variaveis
 var valor = "";
 var opr = "";
@@ -7,7 +7,7 @@ var limpaTela = "";
 var x  = 0;
 var valor2 = "";
 var result  = "";
-
+var mod = "";
 //incluindo numeros no input
 $(document).on("click","#btn1", function(){
     
@@ -190,9 +190,16 @@ $(document).on("click","#btnIgual", function(){
     }
 });
 
-
-
 $(document).on("click","#btnClear", function(){
+    valor = "";
+    valor2 = "";
+    x = "";
+    opr =  "";
+    
+    $("#result").val(valor);
+});
+
+$(document).on("click","#btn", function(){
     valor = "";
     valor2 = "";
     x = "";
